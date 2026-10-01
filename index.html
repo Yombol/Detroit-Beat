@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>RnB Beats | Yombol Music – Silk & Smoke Vibes, Smooth & Emotional Instrumentals</title>
-    <meta name="description" content="Buy professional RnB, Trapsoul & Neosoul beats. Smooth silk textures, ambient smoke, deep bass & vocal atmosphere. SZA, Brent Faiyaz, Kehlani type beats. WAV + Stems available.">
-    <meta name="keywords" content="Buy RnB Beats, Trapsoul Beats, SZA Type Beat, Brent Faiyaz Type Beat, Kehlani Type Beat, R&B Instrumentals, Yombol Music, Exclusive Beats">
+    <title>RnB Beats | Yombol Music – Rose Champagne Neon Edition</title>
+    <meta name="description" content="Buy luxury RnB, Trapsoul & Neosoul beats. Neon rose vibes, sparkling champagne melodies, deep bass & vocal atmosphere. WAV + Stems available.">
+    <meta name="keywords" content="Buy RnB Beats, Trapsoul Beats, Luxury RnB, SZA Type Beat, Brent Faiyaz Type Beat, Kehlani Type Beat, R&B Instrumentals, Yombol Music">
     <meta name="author" content="Yombol Music">
-    <meta name="theme-color" content="#E090A0">
+    <meta name="theme-color" content="#FF007F">
     
     <link rel="canonical" href="https://rnb.yombolmusic.com">
     <link rel="icon" href="images/favicon.png" type="image/png">
@@ -34,15 +34,14 @@
     
     <style>
         :root {
-            /* Paleta Silk & Smoke (Silk Rose, Champagne Glow & Charcoal Smoke) */
-            --dusty-rose: #E090A0;
-            --champagne: #E8C39E;
-            --charcoal: #1E1B20;
-            --deep-smoke: #0F0D10;
-            --bg-center: #161218;
-            --bg-edge: #09080B;
-            --table-bg: rgba(22, 18, 24, 0.90); 
-            --table-hover: rgba(40, 32, 44, 0.98);
+            /* Paleta Rose Champagne Neon */
+            --neon-pink: #FF007F;
+            --rose-barbie: #FF1493;
+            --rose-diamond: #FF8DA1;
+            --champagne-gold: #FDE8BB;
+            --bg-dark-magenta: #0F020A;
+            --glass-bg: rgba(28, 5, 20, 0.85);
+            --glass-hover: rgba(50, 10, 36, 0.95);
             --text-light: #ffffff;
         }
 
@@ -50,84 +49,84 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-edge);
+            background-color: var(--bg-dark-magenta);
             color: var(--text-light);
             overflow-x: hidden;
             line-height: 1.6;
         }
 
-        /* --- BACKGROUND CON LUCES CÁLIDAS Y EMOTICONES SILK & SMOKE --- */
+        /* --- FONDO CON ORBES NEÓN Y DESTELLOS GLAM --- */
         .bg-wrapper {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: -1;
-            background: radial-gradient(circle at 50% 50%, var(--bg-center) 0%, var(--bg-edge) 100%);
+            background: radial-gradient(circle at 50% 30%, #210416 0%, var(--bg-dark-magenta) 100%);
             overflow: hidden;
         }
 
-        .ambient-light {
+        .neon-orb {
             position: absolute;
             border-radius: 50%;
-            filter: blur(150px);
-            opacity: 0.30;
-            animation: pulseLight 20s infinite alternate ease-in-out;
-        }
-        .light-1 { width: 500px; height: 500px; background: var(--dusty-rose); top: -10%; left: -5%; }
-        .light-2 { width: 520px; height: 520px; background: var(--champagne); bottom: -15%; right: -10%; animation-delay: -7s; }
-        .light-3 { width: 400px; height: 400px; background: var(--charcoal); top: 40%; left: 35%; animation-delay: -14s; }
-
-        @keyframes pulseLight {
-            0% { transform: scale(1) translate(0, 0); opacity: 0.20; }
-            100% { transform: scale(1.30) translate(35px, -35px); opacity: 0.40; }
+            filter: blur(120px);
+            opacity: 0.45;
+            animation: moveNeon 16s infinite alternate ease-in-out;
         }
 
+        .orb-1 { width: 450px; height: 450px; background: var(--neon-pink); top: -5%; left: -5%; }
+        .orb-2 { width: 500px; height: 500px; background: var(--rose-barbie); bottom: -10%; right: -5%; animation-delay: -5s; }
+        .orb-3 { width: 380px; height: 380px; background: var(--champagne-gold); top: 40%; left: 30%; opacity: 0.25; animation-delay: -10s; }
+
+        @keyframes moveNeon {
+            0% { transform: scale(1) translate(0, 0); }
+            100% { transform: scale(1.25) translate(40px, -40px); }
+        }
+
+        /* --- ELEMENTOS FLOTANTES NEÓN / CUTE --- */
         .floating-emoji {
             position: absolute;
-            font-size: 3.2rem;
-            opacity: 0.20;
-            filter: drop-shadow(0 0 12px var(--dusty-rose));
+            font-size: 3rem;
+            opacity: 0.35;
+            filter: drop-shadow(0 0 15px var(--neon-pink));
             user-select: none;
             transition: transform 0.2s ease-out;
         }
 
-        /* Posicionamiento de emoticones Silk & Smoke / RnB */
-        .emoji-1  { top: 6%;   left: 3%;  animation: floatSilk1 24s infinite alternate ease-in-out; font-size: 3.8rem; }
-        .emoji-2  { top: 25%;  left: 6%;  animation: floatSilk2 28s infinite alternate ease-in-out; animation-delay: -3s; }
-        .emoji-3  { top: 48%;  left: 2%;  animation: floatSilk1 22s infinite alternate ease-in-out; animation-delay: -7s; font-size: 4rem; }
-        .emoji-4  { top: 70%;  left: 5%;  animation: floatSilk2 26s infinite alternate ease-in-out; animation-delay: -11s; }
-        .emoji-5  { top: 88%;  left: 3%;  animation: floatSilk1 20s infinite alternate ease-in-out; animation-delay: -15s; }
+        .emoji-1  { top: 5%;   left: 3%;  animation: float1 20s infinite alternate ease-in-out; font-size: 3.5rem; }
+        .emoji-2  { top: 22%;  left: 5%;  animation: float2 24s infinite alternate ease-in-out; animation-delay: -3s; }
+        .emoji-3  { top: 45%;  left: 2%;  animation: float1 18s infinite alternate ease-in-out; animation-delay: -6s; font-size: 3.8rem; }
+        .emoji-4  { top: 68%;  left: 4%;  animation: float2 22s infinite alternate ease-in-out; animation-delay: -9s; }
+        .emoji-5  { top: 88%;  left: 3%;  animation: float1 25s infinite alternate ease-in-out; animation-delay: -12s; }
 
-        .emoji-6  { top: 10%;  right: 4%; animation: floatSilk2 25s infinite alternate ease-in-out; font-size: 3.5rem; }
-        .emoji-7  { top: 30%;  right: 2%; animation: floatSilk1 29s infinite alternate ease-in-out; animation-delay: -4s; }
-        .emoji-8  { top: 52%;  right: 5%; animation: floatSilk2 21s infinite alternate ease-in-out; animation-delay: -8s; font-size: 3.8rem; }
-        .emoji-9  { top: 74%;  right: 2%; animation: floatSilk1 27s infinite alternate ease-in-out; animation-delay: -13s; }
-        .emoji-10 { top: 92%;  right: 4%; animation: floatSilk2 23s infinite alternate ease-in-out; animation-delay: -17s; }
+        .emoji-6  { top: 8%;   right: 4%; animation: float2 21s infinite alternate ease-in-out; font-size: 3.4rem; }
+        .emoji-7  { top: 28%;  right: 2%; animation: float1 23s infinite alternate ease-in-out; animation-delay: -4s; }
+        .emoji-8  { top: 50%;  right: 4%; animation: float2 19s infinite alternate ease-in-out; animation-delay: -8s; font-size: 3.6rem; }
+        .emoji-9  { top: 72%;  right: 2%; animation: float1 26s infinite alternate ease-in-out; animation-delay: -11s; }
+        .emoji-10 { top: 90%;  right: 3%; animation: float2 20s infinite alternate ease-in-out; animation-delay: -15s; }
 
-        @keyframes floatSilk1 {
+        @keyframes float1 {
             0%   { transform: translateY(0px) rotate(0deg) scale(1); }
-            50%  { transform: translateY(-28px) translateX(12px) rotate(12deg) scale(1.08); }
-            100% { transform: translateY(22px) translateX(-8px) rotate(-8deg) scale(0.94); }
+            50%  { transform: translateY(-30px) translateX(15px) rotate(15deg) scale(1.1); }
+            100% { transform: translateY(20px) translateX(-10px) rotate(-10deg) scale(0.95); }
         }
 
-        @keyframes floatSilk2 {
+        @keyframes float2 {
             0%   { transform: translateY(0px) rotate(0deg) scale(1); }
-            50%  { transform: translateY(28px) translateX(-12px) rotate(-12deg) scale(1.08); }
-            100% { transform: translateY(-22px) translateX(8px) rotate(8deg) scale(0.94); }
+            50%  { transform: translateY(30px) translateX(-15px) rotate(-15deg) scale(1.1); }
+            100% { transform: translateY(-20px) translateX(10px) rotate(10deg) scale(0.95); }
         }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; position: relative; z-index: 1; }
         
         section { padding: 40px 0; }
 
-        /* --- BANNER CON GRADIENTE SILK & CHAMPAGNE --- */
+        /* --- BANNER CON BORDE DE NEÓN GLAM --- */
         .banner-wrapper {
             width: 100%;
             margin: 20px auto; 
             border-radius: 12px;
             padding: 3px;
-            background: linear-gradient(45deg, var(--dusty-rose), var(--champagne), var(--charcoal));
-            box-shadow: 0 0 50px rgba(224, 144, 160, 0.35), 0 0 30px rgba(232, 195, 158, 0.25);
-            animation: gradientShift 8s infinite alternate;
+            background: linear-gradient(45deg, var(--neon-pink), var(--champagne-gold), var(--rose-barbie));
+            box-shadow: 0 0 40px rgba(255, 0, 127, 0.6), 0 0 20px rgba(253, 232, 187, 0.4);
         }
 
         .banner {
@@ -137,22 +136,16 @@
             background: #000;
         }
 
-        .banner img { 
-            width: 100%; 
-            height: auto; 
-            display: block; 
-            object-fit: cover; 
-            object-position: center;
-        }
+        .banner img { width: 100%; height: auto; display: block; object-fit: cover; }
 
-        /* --- REPRODUCTOR BEATSTARS CON GRADIENTE --- */
+        /* --- REPRODUCTOR BEATSTARS CON MARCO NEÓN ROSA --- */
         .player-wrapper {
             width: 100%;
             margin-bottom: 40px; 
             border-radius: 12px;
             padding: 3px;
-            background: linear-gradient(135deg, var(--champagne), var(--dusty-rose), var(--deep-smoke));
-            box-shadow: 0 0 60px rgba(224, 144, 160, 0.30), 0 0 35px rgba(232, 195, 158, 0.25);
+            background: linear-gradient(135deg, var(--rose-barbie), var(--neon-pink), var(--champagne-gold));
+            box-shadow: 0 0 50px rgba(255, 20, 147, 0.5), 0 0 25px rgba(255, 0, 127, 0.4);
         }
 
         .player-container {
@@ -164,11 +157,7 @@
 
         .player-container iframe { display: block; border: none; width: 100%; height: 800px; }
 
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 100% 50%; }
-        }
-
+        /* --- TITULOS CON EFECTO NEÓN --- */
         .section-title {
             text-align: center; 
             margin-bottom: 40px; 
@@ -177,25 +166,25 @@
             text-transform: uppercase; 
             letter-spacing: 4px; 
             color: #fff;
-            text-shadow: 0 0 20px var(--dusty-rose), 0 0 10px var(--champagne); 
+            text-shadow: 0 0 10px var(--neon-pink), 0 0 25px var(--rose-barbie), 0 0 45px var(--neon-pink); 
         }
 
-        /* --- LICENSING (ESTILO SILK & SMOKE) --- */
-        .pricing-table { display: flex; flex-direction: column; gap: 15px; }
+        /* --- TABLA DE LICENCIAS GLASSMORPHISM NEÓN --- */
+        .pricing-table { display: flex; flex-direction: column; gap: 18px; }
 
         .price-row {
-            background: var(--table-bg); 
+            background: var(--glass-bg); 
             padding: 30px 40px; 
             display: grid; 
             grid-template-columns: 1fr 2fr 1fr;
             align-items: center; 
             transition: 0.4s; 
-            border-radius: 8px;
-            backdrop-filter: blur(14px);
+            border-radius: 12px;
+            backdrop-filter: blur(15px);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.8);
-            border: 1px solid rgba(224, 144, 160, 0.12);
+            border: 1px solid rgba(255, 20, 147, 0.25);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
         }
 
         .price-row::before {
@@ -205,41 +194,41 @@
             transition: 0.4s;
         }
 
-        .price-row:nth-child(1)::before { background: linear-gradient(to bottom, #7a5460, #b06d80); }
-        .price-row:nth-child(2)::before { background: linear-gradient(to bottom, var(--dusty-rose), #f0b6c4); }
-        .price-row:nth-child(3)::before { background: linear-gradient(to bottom, var(--champagne), #fcefdc); }
-        .price-row:nth-child(4)::before { background: linear-gradient(to bottom, #ffffff, var(--dusty-rose)); }
+        .price-row:nth-child(1)::before { background: var(--rose-diamond); box-shadow: 0 0 15px var(--rose-diamond); }
+        .price-row:nth-child(2)::before { background: var(--neon-pink); box-shadow: 0 0 15px var(--neon-pink); }
+        .price-row:nth-child(3)::before { background: var(--champagne-gold); box-shadow: 0 0 15px var(--champagne-gold); }
+        .price-row:nth-child(4)::before { background: #ffffff; box-shadow: 0 0 15px #ffffff; }
 
         .price-row:hover {
-            transform: translateX(10px);
-            background: var(--table-hover);
-            box-shadow: 0 0 35px rgba(224, 144, 160, 0.25);
-            border-color: rgba(224, 144, 160, 0.3);
+            transform: translateX(10px) scale(1.01);
+            background: var(--glass-hover);
+            box-shadow: 0 0 35px rgba(255, 0, 127, 0.4);
+            border-color: rgba(255, 141, 161, 0.6);
         }
 
-        .price-row:hover::before { width: 8px; }
+        .price-row:hover::before { width: 10px; }
 
         .license-name { font-size: 1.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
-        .price-row:nth-child(1) .license-name { color: #d69ca8; }
-        .price-row:nth-child(2) .license-name { color: var(--dusty-rose); }
-        .price-row:nth-child(3) .license-name { color: var(--champagne); }
-        .price-row:nth-child(4) .license-name { color: #ffffff; }
+        .price-row:nth-child(1) .license-name { color: var(--rose-diamond); text-shadow: 0 0 10px rgba(255, 141, 161, 0.5); }
+        .price-row:nth-child(2) .license-name { color: var(--neon-pink); text-shadow: 0 0 10px rgba(255, 0, 127, 0.6); }
+        .price-row:nth-child(3) .license-name { color: var(--champagne-gold); text-shadow: 0 0 10px rgba(253, 232, 187, 0.5); }
+        .price-row:nth-child(4) .license-name { color: #ffffff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
 
-        .license-name span { color: #e6d3db; font-size: 0.9rem; display: block; font-weight: 600; margin-top: 5px; opacity: 0.85; }
+        .license-name span { color: #ffe3f0; font-size: 0.9rem; display: block; font-weight: 600; margin-top: 5px; opacity: 0.9; }
 
-        .license-details { color: #e6e6e6; font-size: 0.95rem; padding: 0 30px; border-left: 1px solid rgba(224, 144, 160, 0.15); }
-        .license-details strong { color: #fff; display: block; margin-bottom: 5px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
+        .license-details { color: #fce8f3; font-size: 0.95rem; padding: 0 30px; border-left: 1px solid rgba(255, 20, 147, 0.25); }
+        .license-details strong { color: var(--champagne-gold); display: block; margin-bottom: 5px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
 
-        .price-tag { font-size: 2.6rem; font-weight: 900; text-align: right; color: #fff; text-shadow: 0 0 15px rgba(224, 144, 160, 0.4); }
-        .price-tag.offer { font-size: 1.8rem; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 255, 255, 0.6); color: #ffffff; }
+        .price-tag { font-size: 2.6rem; font-weight: 900; text-align: right; color: #fff; text-shadow: 0 0 15px var(--neon-pink); }
+        .price-tag.offer { font-size: 1.8rem; line-height: 1.2; text-shadow: 0 0 20px var(--rose-barbie); color: #ffffff; }
 
         .instant-delivery {
-            text-align: center; margin-top: 30px; color: var(--champagne);
-            letter-spacing: 4px; font-size: 0.85rem; text-transform: uppercase; font-weight: 800;
-            text-shadow: 0 0 10px rgba(232, 195, 158, 0.4);
+            text-align: center; margin-top: 30px; color: var(--champagne-gold);
+            letter-spacing: 4px; font-size: 0.9rem; text-transform: uppercase; font-weight: 800;
+            text-shadow: 0 0 15px rgba(253, 232, 187, 0.6);
         }
 
-        /* --- CONTACT SECTION --- */
+        /* --- CONTACTO Y BOTÓN NEÓN --- */
         .contact-section { text-align: center; padding: 50px 0; }
 
         .social-icons { display: flex; justify-content: center; align-items: center; gap: 50px; margin-bottom: 40px; }
@@ -253,7 +242,7 @@
             justify-content: center;
             text-decoration: none !important;
         }
-        .social-icons a:hover { color: var(--dusty-rose); transform: scale(1.15); filter: drop-shadow(0 0 20px rgba(224, 144, 160, 0.7)); }
+        .social-icons a:hover { color: var(--neon-pink); transform: scale(1.2); filter: drop-shadow(0 0 25px var(--neon-pink)); }
         
         .beatstars-b { 
             font-family: 'Arial Black', Impact, sans-serif; 
@@ -265,20 +254,22 @@
         .whatsapp-btn {
             display: inline-flex; align-items: center; justify-content: center; gap: 12px;
             padding: 20px 50px;
-            background: linear-gradient(90deg, var(--charcoal), var(--dusty-rose));
+            background: linear-gradient(90deg, var(--neon-pink), var(--rose-barbie), var(--champagne-gold));
+            background-size: 200% auto;
             color: #ffffff; text-decoration: none !important;
             font-weight: 900; font-size: 1.1rem; text-transform: uppercase; 
             border-radius: 12px; 
-            transition: 0.3s;
+            transition: 0.4s;
             letter-spacing: 1px;
-            box-shadow: 0 0 25px rgba(224, 144, 160, 0.35);
-            border: 1px solid rgba(255,255,255,0.15);
+            box-shadow: 0 0 30px rgba(255, 0, 127, 0.6);
+            border: 1px solid rgba(255,255,255,0.4);
         }
 
         .whatsapp-btn i { font-size: 1.8rem; color: #ffffff; }
         .whatsapp-btn:hover { 
-            transform: scale(1.05); 
-            box-shadow: 0 0 45px rgba(224, 144, 160, 0.65); 
+            background-position: right center;
+            transform: scale(1.06); 
+            box-shadow: 0 0 50px rgba(255, 20, 147, 0.85); 
             color: #ffffff;
         }
 
@@ -286,27 +277,27 @@
         footer { 
             text-align: center; 
             padding: 60px 0; 
-            border-top: 1px solid rgba(224, 144, 160, 0.2); 
-            font-size: 0.8rem; 
-            color: #a89aa0; 
+            border-top: 1px solid rgba(255, 20, 147, 0.3); 
+            font-size: 0.85rem; 
+            color: #d1a8be; 
             margin-top: 20px; 
         }
         footer p { margin-bottom: 15px; }
         .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .footer-links a { color: #d4c4cb; text-decoration: none; transition: 0.3s; font-weight: 600; }
-        .footer-links a:hover { color: var(--dusty-rose); text-shadow: 0 0 10px rgba(224, 144, 160, 0.5); }
+        .footer-links a { color: #f5cbe0; text-decoration: none; transition: 0.3s; font-weight: 600; }
+        .footer-links a:hover { color: var(--neon-pink); text-shadow: 0 0 10px var(--neon-pink); }
 
         /* RESPONSIVE DESIGN */
         @media (max-width: 1250px) {
-            .floating-emoji { opacity: 0.14; font-size: 2.2rem !important; }
+            .floating-emoji { opacity: 0.2; font-size: 2.2rem !important; }
         }
         @media (max-width: 900px) {
             .floating-emoji { display: none; }
             .price-row { grid-template-columns: 1fr; text-align: center; gap: 15px; padding: 30px; }
-            .price-row::before { width: 100%; height: 5px; left: 0; top: 0; }
-            .price-row:hover::before { width: 100%; height: 7px; }
+            .price-row::before { width: 100%; height: 6px; left: 0; top: 0; }
+            .price-row:hover::before { width: 100%; height: 8px; }
             .price-tag { text-align: center; }
-            .license-details { border-left: none; padding: 10px 0; border-top: 1px solid rgba(224,144,160,0.15); margin-top: 10px; }
+            .license-details { border-left: none; padding: 10px 0; border-top: 1px solid rgba(255, 20, 147, 0.2); margin-top: 10px; }
             .section-title { font-size: 2.2rem; }
             .whatsapp-btn { padding: 18px 30px; font-size: 1rem; width: 100%; max-width: 350px; }
         }
@@ -314,44 +305,44 @@
 </head>
 <body>
 
-    <!-- Fondo dinámico con luces cálidas y emoticones 2D de Silk & Smoke / RnB -->
+    <!-- Fondo Neón Rose Champagne con luces y emoticones flotantes glam -->
     <div class="bg-wrapper">
-        <div class="ambient-light light-1"></div>
-        <div class="ambient-light light-2"></div>
-        <div class="ambient-light light-3"></div>
+        <div class="neon-orb orb-1"></div>
+        <div class="neon-orb orb-2"></div>
+        <div class="neon-orb orb-3"></div>
         
-        <!-- Emoticones Lado Izquierdo -->
-        <div class="floating-emoji emoji-1">🍷</div>
-        <div class="floating-emoji emoji-2">🌙</div>
-        <div class="floating-emoji emoji-3">🕯️</div>
-        <div class="floating-emoji emoji-4">🥀</div>
-        <div class="floating-emoji emoji-5">💨</div>
+        <!-- Emoticones Neón Lado Izquierdo -->
+        <div class="floating-emoji emoji-1">🥂</div>
+        <div class="floating-emoji emoji-2">💎</div>
+        <div class="floating-emoji emoji-3">🍾</div>
+        <div class="floating-emoji emoji-4">✨</div>
+        <div class="floating-emoji emoji-5">👠</div>
 
-        <!-- Emoticones Lado Derecho -->
-        <div class="floating-emoji emoji-6">✨</div>
-        <div class="floating-emoji emoji-7">🎙️</div>
-        <div class="floating-emoji emoji-8">🍸</div>
-        <div class="floating-emoji emoji-9">🥂</div>
-        <div class="floating-emoji emoji-10">🖤</div>
+        <!-- Emoticones Neón Lado Derecho -->
+        <div class="floating-emoji emoji-6">💖</div>
+        <div class="floating-emoji emoji-7">🍸</div>
+        <div class="floating-emoji emoji-8">🎀</div>
+        <div class="floating-emoji emoji-9">💄</div>
+        <div class="floating-emoji emoji-10">💋</div>
     </div>
 
     <div class="container">
         
-        <!-- Top Banner with Gradient Wrapper -->
+        <!-- Top Banner con borde Neón -->
         <div class="banner-wrapper">
             <header class="banner">
-                <img src="images/Banner-(RnB).jpg" alt="Yombol Music Silk & Smoke RnB Beats Banner">
+                <img src="images/Banner-(RnB).jpg" alt="Yombol Music Rose Champagne Neon RnB Beats Banner">
             </header>
         </div>
 
-        <!-- Beatstars Player -->
+        <!-- Reproductor BeatStars con Marco Neón Rosa -->
         <div class="player-wrapper">
             <div class="player-container">
                 <iframe src="https://player.beatstars.com/?storeId=148325" scrolling="no"></iframe>
             </div>
         </div>
 
-        <!-- Licensing Section -->
+        <!-- Sección de Licencias Glassmorphism Neón -->
         <section id="licensing">
             <h2 class="section-title">Licensing Options</h2>
             
@@ -382,10 +373,10 @@
                 </div>
             </div>
 
-            <p class="instant-delivery">Silk Textures. Warm Vocal Atmospheres. Instant delivery.</p>
+            <p class="instant-delivery">Sparkling Melodies. Luxury RnB Vibes. Instant Delivery.</p>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Sección de Contacto -->
         <section class="contact-section">
             <h2 class="section-title">Get In Touch</h2>
             <div class="social-icons">
@@ -410,16 +401,16 @@
         </footer>
     </div>
 
-    <!-- Script de reacción sutil al Scroll para los elementos flotantes -->
+    <!-- Script de Parallax suave al hacer Scroll -->
     <script>
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const emojis = document.querySelectorAll('.floating-emoji');
             
             emojis.forEach((emoji, i) => {
-                const speed = 0.03 + (i % 4) * 0.01;
+                const speed = 0.035 + (i % 4) * 0.012;
                 const direction = i % 2 === 0 ? 1 : -1;
-                emoji.style.transform = `translateY(${scrolled * speed * direction}px) rotate(${scrolled * 0.015 * direction}deg)`;
+                emoji.style.transform = `translateY(${scrolled * speed * direction}px) rotate(${scrolled * 0.02 * direction}deg)`;
             });
         });
     </script>
