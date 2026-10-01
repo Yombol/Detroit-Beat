@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Detroit Type Beats | Yombol Music – Hard Detroit Instrumentals</title>
-    <meta name="description" content="Buy professional Detroit Type Beats. Hard-hitting, fast-paced instrumentals inspired by BabyTron, Rio Da Yung OG & Veeze. WAV + Stems available.">
-    <meta name="keywords" content="Detroit Type Beat, BabyTron Type Beat, Rio Da Yung OG Type Beat, Veeze Type Beat, Detroit Beats, Yombol Music">
+    <title>Drill Beats | Yombol Music – Dark, Cold & Aggressive Instrumentals</title>
+    <meta name="description" content="Buy professional UK, NY & Spanish Drill beats. High-energy sliding 808s, dark atmospheres, WAV + Individual Track Stems for pro mixing. Unlimited & Premium licenses available.">
+    <meta name="keywords" content="Buy Drill Beats, UK Drill Type Beat, NY Drill Type Beat, Central Cee Type Beat, Pop Smoke Type Beat, Spanish Drill, Yombol Music, Exclusive Beats">
     <meta name="author" content="Yombol Music">
-    <meta name="theme-color" content="#00ff88">
+    <meta name="theme-color" content="#00f0ff">
     
-    <link rel="canonical" href="https://detroit.yombolmusic.com">
+    <link rel="canonical" href="https://drill.yombolmusic.com">
     <link rel="icon" href="images/favicon.png" type="image/png">
 
     <!-- Meta Pixel Code -->
@@ -34,14 +34,15 @@
     
     <style>
         :root {
-            --neon-green: #00ff88;
-            --neon-purple: #b300ff;
-            --deep-green: #00cc6a;
-            --deep-purple: #6b00b3;
-            --bg-center: #001a0f;
-            --bg-edge: #000a05;
-            --table-bg: rgba(0, 20, 12, 0.88);
-            --table-hover: rgba(0, 35, 20, 0.95);
+            /* Paleta Drill Ice & Cold Steel Glow */
+            --ice-cyan: #00f0ff;
+            --steel-blue: #0077ff;
+            --deep-navy: #002b66;
+            --dark-cold: #081426;
+            --bg-center: #040d1a;
+            --bg-edge: #010408;
+            --table-bg: rgba(6, 18, 36, 0.88); 
+            --table-hover: rgba(10, 32, 64, 0.98);
             --text-light: #ffffff;
         }
 
@@ -55,7 +56,7 @@
             line-height: 1.6;
         }
 
-        /* --- BACKGROUND --- */
+        /* --- BACKGROUND CON LUCES DE HIELO Y EMOTICONES DRILL 2D FLOTANTES --- */
         .bg-wrapper {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -68,71 +69,69 @@
             position: absolute;
             border-radius: 50%;
             filter: blur(130px);
-            opacity: 0.32;
+            opacity: 0.35;
             animation: pulseLight 18s infinite alternate ease-in-out;
         }
-        .light-1 { width: 420px; height: 420px; background: var(--neon-green); top: -12%; left: -8%; }
-        .light-2 { width: 480px; height: 480px; background: var(--neon-purple); bottom: -15%; right: -10%; animation-delay: -6s; }
-        .light-3 { width: 280px; height: 280px; background: var(--deep-green); top: 45%; left: 42%; animation-delay: -11s; }
+        .light-1 { width: 480px; height: 480px; background: var(--ice-cyan); top: -10%; left: -5%; }
+        .light-2 { width: 550px; height: 550px; background: var(--steel-blue); bottom: -15%; right: -10%; animation-delay: -6s; }
+        .light-3 { width: 380px; height: 380px; background: var(--deep-navy); top: 45%; left: 38%; animation-delay: -12s; }
 
         @keyframes pulseLight {
-            0% { transform: scale(1) translate(0, 0); opacity: 0.22; }
-            100% { transform: scale(1.35) translate(40px, -40px); opacity: 0.42; }
+            0% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+            100% { transform: scale(1.35) translate(40px, -40px); opacity: 0.45; }
         }
 
-        /* Floating Lean symbols */
-        .floating-symbol {
+        .floating-emoji {
             position: absolute;
-            opacity: 0.26;
-            filter: blur(0.8px);
+            font-size: 3.2rem;
+            opacity: 0.22;
+            filter: drop-shadow(0 0 12px var(--ice-cyan));
             user-select: none;
-            font-weight: 300;
             transition: transform 0.2s ease-out;
         }
 
-        .sym-left { animation: floatLeft 26s infinite alternate ease-in-out; }
-        .sym-1  { top: 7%;  left: 2%;  font-size: 3.1rem; color: var(--neon-green); text-shadow: 0 0 14px var(--neon-green); animation-duration: 21s; }
-        .sym-2  { top: 26%; left: 5%;  font-size: 2.7rem; color: var(--neon-purple); text-shadow: 0 0 12px var(--neon-purple); animation-duration: 25s; animation-delay: -4s; }
-        .sym-3  { top: 47%; left: 1%;  font-size: 3.6rem; color: var(--neon-green); text-shadow: 0 0 16px var(--neon-green); animation-duration: 19s; animation-delay: -8s; }
-        .sym-4  { top: 68%; left: 4%;  font-size: 2.9rem; color: var(--neon-purple); text-shadow: 0 0 13px var(--neon-purple); animation-duration: 24s; animation-delay: -12s; }
-        .sym-5  { top: 87%; left: 2%;  font-size: 3.3rem; color: var(--neon-green); text-shadow: 0 0 15px var(--neon-green); animation-duration: 22s; animation-delay: -16s; }
+        /* Posicionamiento de emoticones Drill / Ice */
+        .emoji-1  { top: 6%;   left: 3%;  animation: floatDrill1 24s infinite alternate ease-in-out; font-size: 3.8rem; }
+        .emoji-2  { top: 25%;  left: 6%;  animation: floatDrill2 28s infinite alternate ease-in-out; animation-delay: -3s; }
+        .emoji-3  { top: 48%;  left: 2%;  animation: floatDrill1 22s infinite alternate ease-in-out; animation-delay: -7s; font-size: 4rem; }
+        .emoji-4  { top: 70%;  left: 5%;  animation: floatDrill2 26s infinite alternate ease-in-out; animation-delay: -11s; }
+        .emoji-5  { top: 88%;  left: 3%;  animation: floatDrill1 20s infinite alternate ease-in-out; animation-delay: -15s; }
 
-        .sym-right { animation: floatRight 26s infinite alternate ease-in-out; }
-        .sym-6  { top: 10%; right: 3%; font-size: 3.2rem; color: var(--neon-purple); text-shadow: 0 0 14px var(--neon-purple); animation-duration: 23s; }
-        .sym-7  { top: 30%; right: 1%; font-size: 2.5rem; color: var(--neon-green); text-shadow: 0 0 11px var(--neon-green); animation-duration: 20s; animation-delay: -5s; }
-        .sym-8  { top: 51%; right: 4%; font-size: 3.5rem; color: var(--neon-purple); text-shadow: 0 0 17px var(--neon-purple); animation-duration: 27s; animation-delay: -9s; }
-        .sym-9  { top: 71%; right: 2%; font-size: 2.8rem; color: var(--neon-green); text-shadow: 0 0 12px var(--neon-green); animation-duration: 21s; animation-delay: -14s; }
-        .sym-10 { top: 89%; right: 5%; font-size: 3.1rem; color: var(--neon-purple); text-shadow: 0 0 14px var(--neon-purple); animation-duration: 24s; animation-delay: -18s; }
+        .emoji-6  { top: 10%;  right: 4%; animation: floatDrill2 25s infinite alternate ease-in-out; font-size: 3.5rem; }
+        .emoji-7  { top: 30%;  right: 2%; animation: floatDrill1 29s infinite alternate ease-in-out; animation-delay: -4s; }
+        .emoji-8  { top: 52%;  right: 5%; animation: floatDrill2 21s infinite alternate ease-in-out; animation-delay: -8s; font-size: 3.8rem; }
+        .emoji-9  { top: 74%;  right: 2%; animation: floatDrill1 27s infinite alternate ease-in-out; animation-delay: -13s; }
+        .emoji-10 { top: 92%;  right: 4%; animation: floatDrill2 23s infinite alternate ease-in-out; animation-delay: -17s; }
 
-        @keyframes floatLeft {
-            0%   { transform: translateY(0) rotate(0deg) scale(1); }
-            50%  { transform: translateY(-22px) translateX(10px) rotate(10deg) scale(1.07); }
-            100% { transform: translateY(25px) translateX(-7px) rotate(-7deg) scale(0.96); }
+        @keyframes floatDrill1 {
+            0%   { transform: translateY(0px) rotate(0deg) scale(1); }
+            50%  { transform: translateY(-30px) translateX(15px) rotate(15deg) scale(1.1); }
+            100% { transform: translateY(25px) translateX(-10px) rotate(-10deg) scale(0.92); }
         }
 
-        @keyframes floatRight {
-            0%   { transform: translateY(0) rotate(0deg) scale(1); }
-            50%  { transform: translateY(25px) translateX(-10px) rotate(-10deg) scale(1.07); }
-            100% { transform: translateY(-22px) translateX(7px) rotate(7deg) scale(0.96); }
+        @keyframes floatDrill2 {
+            0%   { transform: translateY(0px) rotate(0deg) scale(1); }
+            50%  { transform: translateY(30px) translateX(-15px) rotate(-15deg) scale(1.1); }
+            100% { transform: translateY(-25px) translateX(10px) rotate(10deg) scale(0.92); }
         }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; position: relative; z-index: 1; }
         
         section { padding: 40px 0; }
 
-        /* --- BANNER --- */
+        /* --- BANNER CON GRADIENTE AZUL HIELO Y ACERO --- */
         .banner-wrapper {
             width: 100%;
             margin: 20px auto; 
             border-radius: 12px;
-            padding: 4px;
-            background: linear-gradient(45deg, var(--neon-green), var(--neon-purple), var(--deep-green));
-            box-shadow: 0 0 55px rgba(0, 255, 136, 0.35);
-            animation: gradientShift 9s infinite alternate;
+            padding: 3px;
+            background: linear-gradient(45deg, var(--ice-cyan), var(--steel-blue), var(--deep-navy));
+            box-shadow: 0 0 50px rgba(0, 240, 255, 0.4), 0 0 30px rgba(0, 119, 255, 0.3);
+            animation: gradientShift 8s infinite alternate;
         }
 
         .banner {
-            border-radius: 8px;
+            border-radius: 9px;
             overflow: hidden;
             line-height: 0;
             background: #000;
@@ -146,19 +145,19 @@
             object-position: center;
         }
 
-        /* --- REPRODUCTOR --- */
+        /* --- REPRODUCTOR BEATSTARS CON GRADIENTE --- */
         .player-wrapper {
             width: 100%;
             margin-bottom: 40px; 
             border-radius: 12px;
-            padding: 4px;
-            background: linear-gradient(135deg, var(--neon-purple), var(--neon-green), var(--deep-purple));
-            box-shadow: 0 0 60px rgba(179, 0, 255, 0.28);
+            padding: 3px;
+            background: linear-gradient(135deg, var(--steel-blue), var(--ice-cyan), var(--deep-navy));
+            box-shadow: 0 0 60px rgba(0, 240, 255, 0.35), 0 0 35px rgba(0, 119, 255, 0.3);
         }
 
         .player-container {
             background: #000;
-            border-radius: 8px;
+            border-radius: 9px;
             overflow: hidden;
             line-height: 0;
         }
@@ -178,10 +177,10 @@
             text-transform: uppercase; 
             letter-spacing: 4px; 
             color: #fff;
-            text-shadow: 0 0 18px var(--neon-green); 
+            text-shadow: 0 0 20px var(--ice-cyan), 0 0 10px var(--steel-blue); 
         }
 
-        /* --- LICENSING --- */
+        /* --- LICENSING (ESTILO YOMBOL DRILL) --- */
         .pricing-table { display: flex; flex-direction: column; gap: 15px; }
 
         .price-row {
@@ -192,11 +191,11 @@
             align-items: center; 
             transition: 0.4s; 
             border-radius: 8px;
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(14px);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.6);
-            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+            border: 1px solid rgba(255,255,255,0.06);
         }
 
         .price-row::before {
@@ -206,41 +205,41 @@
             transition: 0.4s;
         }
 
-        .price-row:nth-child(1)::before { background: linear-gradient(to bottom, #00cc6a, #00ff88); }
-        .price-row:nth-child(2)::before { background: linear-gradient(to bottom, #00ff88, #b300ff); }
-        .price-row:nth-child(3)::before { background: linear-gradient(to bottom, #b300ff, #d580ff); }
-        .price-row:nth-child(4)::before { background: linear-gradient(to bottom, #00ff88, #b300ff); }
+        .price-row:nth-child(1)::before { background: linear-gradient(to bottom, var(--deep-navy), #0055ff); }
+        .price-row:nth-child(2)::before { background: linear-gradient(to bottom, var(--steel-blue), #3399ff); }
+        .price-row:nth-child(3)::before { background: linear-gradient(to bottom, var(--ice-cyan), #80f7ff); }
+        .price-row:nth-child(4)::before { background: linear-gradient(to bottom, #ffffff, var(--ice-cyan)); }
 
         .price-row:hover {
             transform: translateX(10px);
             background: var(--table-hover);
-            box-shadow: 0 0 35px rgba(0, 255, 136, 0.22);
-            border-color: rgba(255,255,255,0.1);
+            box-shadow: 0 0 35px rgba(0, 240, 255, 0.25);
+            border-color: rgba(0, 240, 255, 0.2);
         }
 
         .price-row:hover::before { width: 8px; }
 
-        .license-name { font-size: 1.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: #66ffb3; }
-        .price-row:nth-child(1) .license-name { color: #33ff99; }
-        .price-row:nth-child(2) .license-name { color: #00ff88; }
-        .price-row:nth-child(3) .license-name { color: #d580ff; }
-        .price-row:nth-child(4) .license-name { color: #b300ff; }
+        .license-name { font-size: 1.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+        .price-row:nth-child(1) .license-name { color: #66a3ff; }
+        .price-row:nth-child(2) .license-name { color: #80b3ff; }
+        .price-row:nth-child(3) .license-name { color: var(--ice-cyan); }
+        .price-row:nth-child(4) .license-name { color: #ffffff; }
 
-        .license-name span { color: #b3ffd9; font-size: 0.9rem; display: block; font-weight: 600; margin-top: 5px; opacity: 0.8; }
+        .license-name span { color: #c2d8f2; font-size: 0.9rem; display: block; font-weight: 600; margin-top: 5px; opacity: 0.85; }
 
         .license-details { color: #e6e6e6; font-size: 0.95rem; padding: 0 30px; border-left: 1px solid rgba(255,255,255,0.1); }
         .license-details strong { color: #fff; display: block; margin-bottom: 5px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
 
-        .price-tag { font-size: 2.6rem; font-weight: 900; text-align: right; color: #fff; text-shadow: 0 0 15px rgba(0, 255, 136, 0.4); }
-        .price-tag.offer { font-size: 1.8rem; line-height: 1.2; text-shadow: 0 0 15px rgba(179, 0, 255, 0.55); color: var(--neon-purple); }
+        .price-tag { font-size: 2.6rem; font-weight: 900; text-align: right; color: #fff; text-shadow: 0 0 15px rgba(0, 240, 255, 0.4); }
+        .price-tag.offer { font-size: 1.8rem; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 255, 255, 0.6); color: #ffffff; }
 
         .instant-delivery {
-            text-align: center; margin-top: 30px; color: var(--neon-green);
+            text-align: center; margin-top: 30px; color: var(--ice-cyan);
             letter-spacing: 4px; font-size: 0.85rem; text-transform: uppercase; font-weight: 800;
-            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
         }
 
-        /* --- CONTACT --- */
+        /* --- CONTACT SECTION --- */
         .contact-section { text-align: center; padding: 50px 0; }
 
         .social-icons { display: flex; justify-content: center; align-items: center; gap: 50px; margin-bottom: 40px; }
@@ -254,7 +253,7 @@
             justify-content: center;
             text-decoration: none !important;
         }
-        .social-icons a:hover { color: var(--neon-green); transform: scale(1.15); filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.7)); }
+        .social-icons a:hover { color: var(--ice-cyan); transform: scale(1.15); filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.7)); }
         
         .beatstars-b { 
             font-family: 'Arial Black', Impact, sans-serif; 
@@ -266,43 +265,43 @@
         .whatsapp-btn {
             display: inline-flex; align-items: center; justify-content: center; gap: 12px;
             padding: 20px 50px;
-            background: linear-gradient(90deg, var(--deep-green), var(--neon-purple));
-            color: #fff; text-decoration: none !important;
-            font-weight: 800; font-size: 1.1rem; text-transform: uppercase; 
+            background: linear-gradient(90deg, var(--deep-navy), var(--ice-cyan));
+            color: #000; text-decoration: none !important;
+            font-weight: 900; font-size: 1.1rem; text-transform: uppercase; 
             border-radius: 12px; 
             transition: 0.3s;
             letter-spacing: 1px;
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.35);
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
             border: 1px solid rgba(255,255,255,0.1);
         }
 
-        .whatsapp-btn i { font-size: 1.8rem; }
+        .whatsapp-btn i { font-size: 1.8rem; color: #000; }
         .whatsapp-btn:hover { 
             transform: scale(1.05); 
-            box-shadow: 0 0 40px rgba(179, 0, 255, 0.55); 
-            color: #fff;
+            box-shadow: 0 0 45px rgba(0, 240, 255, 0.7); 
+            color: #000;
         }
 
         /* --- FOOTER --- */
         footer { 
             text-align: center; 
             padding: 60px 0; 
-            border-top: 1px solid rgba(0, 255, 136, 0.18); 
+            border-top: 1px solid rgba(0, 240, 255, 0.2); 
             font-size: 0.8rem; 
-            color: #6b9e85; 
+            color: #8fa3b8; 
             margin-top: 20px; 
         }
         footer p { margin-bottom: 15px; }
         .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .footer-links a { color: #8fbfa8; text-decoration: none; transition: 0.3s; font-weight: 600; }
-        .footer-links a:hover { color: var(--neon-green); text-shadow: 0 0 10px rgba(0, 255, 136, 0.5); }
+        .footer-links a { color: #a3c4e2; text-decoration: none; transition: 0.3s; font-weight: 600; }
+        .footer-links a:hover { color: var(--ice-cyan); text-shadow: 0 0 10px rgba(0, 240, 255, 0.5); }
 
-        /* RESPONSIVE */
+        /* RESPONSIVE DESIGN */
         @media (max-width: 1250px) {
-            .floating-symbol { opacity: 0.14; font-size: 2.1rem !important; }
+            .floating-emoji { opacity: 0.14; font-size: 2.2rem !important; }
         }
         @media (max-width: 900px) {
-            .floating-symbol { display: none; }
+            .floating-emoji { display: none; }
             .price-row { grid-template-columns: 1fr; text-align: center; gap: 15px; padding: 30px; }
             .price-row::before { width: 100%; height: 5px; left: 0; top: 0; }
             .price-row:hover::before { width: 100%; height: 7px; }
@@ -315,32 +314,33 @@
 </head>
 <body>
 
+    <!-- Fondo dinámico con luces frías y emoticones 2D de Drill / Ice -->
     <div class="bg-wrapper">
         <div class="ambient-light light-1"></div>
         <div class="ambient-light light-2"></div>
         <div class="ambient-light light-3"></div>
         
-        <!-- Left side symbols -->
-        <div class="floating-symbol sym-left sym-1">🥤</div>
-        <div class="floating-symbol sym-left sym-2">💎</div>
-        <div class="floating-symbol sym-left sym-3">🥤</div>
-        <div class="floating-symbol sym-left sym-4">💵</div>
-        <div class="floating-symbol sym-left sym-5">🥤</div>
+        <!-- Emoticones Lado Izquierdo -->
+        <div class="floating-emoji emoji-1">🥷</div>
+        <div class="floating-emoji emoji-2">❄️</div>
+        <div class="floating-emoji emoji-3">🗡️</div>
+        <div class="floating-emoji emoji-4">🧊</div>
+        <div class="floating-emoji emoji-5">💥</div>
 
-        <!-- Right side symbols -->
-        <div class="floating-symbol sym-right sym-6">💎</div>
-        <div class="floating-symbol sym-right sym-7">🥤</div>
-        <div class="floating-symbol sym-right sym-8">💵</div>
-        <div class="floating-symbol sym-right sym-9">💎</div>
-        <div class="floating-symbol sym-right sym-10">🥤</div>
+        <!-- Emoticones Lado Derecho -->
+        <div class="floating-emoji emoji-6">💎</div>
+        <div class="floating-emoji emoji-7">🥷</div>
+        <div class="floating-emoji emoji-8">💥</div>
+        <div class="floating-emoji emoji-9">🧊</div>
+        <div class="floating-emoji emoji-10">👺</div>
     </div>
 
     <div class="container">
         
-        <!-- Banner -->
+        <!-- Top Banner with Gradient Wrapper -->
         <div class="banner-wrapper">
             <header class="banner">
-                <img src="images/Banner-(DETROIT).jpg" alt="Yombol Music Detroit Type Beats Banner">
+                <img src="images/Banner-(Drill).jpg" alt="Yombol Music Drill Beats Banner">
             </header>
         </div>
 
@@ -351,26 +351,30 @@
             </div>
         </div>
 
-        <!-- Licensing -->
+        <!-- Licensing Section -->
         <section id="licensing">
             <h2 class="section-title">Licensing Options</h2>
             
             <div class="pricing-table">
+                <!-- Standard -->
                 <div class="price-row">
                     <div class="license-name">Standard<span>High-Quality MP3 + WAV</span></div>
                     <div class="license-details"><strong>Independent Artists</strong>Commercial Monetization • 100% Royalty-Free • Perfect for Streaming & Social Media</div>
                     <div class="price-tag">$34.90</div>
                 </div>
+                <!-- Premium -->
                 <div class="price-row">
                     <div class="license-name">Premium<span>MP3 + WAV + Track Stems</span></div>
                     <div class="license-details"><strong>Studio Quality</strong>Individual Tracklines (Stems) • Ideal for Official Releases • Optimized for Pro Mixing</div>
                     <div class="price-tag">$59.90</div>
                 </div>
+                <!-- Unlimited -->
                 <div class="price-row">
                     <div class="license-name">Unlimited<span>MP3 + WAV + Track Stems</span></div>
                     <div class="license-details"><strong>Full Control</strong>Unlimited Streams & Sales • Profit-Share Included • Best Value for Major Distribution</div>
                     <div class="price-tag">$149.90</div>
                 </div>
+                <!-- Exclusive -->
                 <div class="price-row">
                     <div class="license-name">Exclusive<span>All Formats + Contract</span></div>
                     <div class="license-details"><strong>Total Ownership</strong>100% Full Rights • Beat Removed from Store • PDF Contract Included</div>
@@ -378,10 +382,10 @@
                 </div>
             </div>
 
-            <p class="instant-delivery">Street energy. Cyber precision. Instant delivery.</p>
+            <p class="instant-delivery">Sliding 808s. Ice Cold Precision. Instant delivery.</p>
         </section>
 
-        <!-- Contact -->
+        <!-- Contact Section -->
         <section class="contact-section">
             <h2 class="section-title">Get In Touch</h2>
             <div class="social-icons">
@@ -390,7 +394,7 @@
                 <a href="https://www.beatstars.com/yombolmusic/tracks" target="_blank" aria-label="Beatstars"><span class="beatstars-b">B</span></a>
             </div>
             
-            <a href="https://wa.me/573194018839?text=Hello,%20I'd%20like%20more%20information%20about%20Yombol%20Music%20beats..." class="whatsapp-btn" target="_blank">
+            <a href="https://wa.me/573194018839?text=Hello,%20I'd%20like%20more%20information%20about%20Yombol%20Music%20Drill%20beats..." class="whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i> WhatsApp – Let's Work
             </a>
         </section>
@@ -406,17 +410,16 @@
         </footer>
     </div>
 
+    <!-- Script de reacción sutil al Scroll para los elementos flotantes -->
     <script>
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
-            const leftSymbols = document.querySelectorAll('.sym-left');
-            const rightSymbols = document.querySelectorAll('.sym-right');
+            const emojis = document.querySelectorAll('.floating-emoji');
             
-            leftSymbols.forEach((sym, i) => {
-                sym.style.transform = `translateY(${scrolled * (0.04 + i * 0.01)}px) rotate(${scrolled * 0.02}deg)`;
-            });
-            rightSymbols.forEach((sym, i) => {
-                sym.style.transform = `translateY(${-scrolled * (0.04 + i * 0.01)}px) rotate(${-scrolled * 0.02}deg)`;
+            emojis.forEach((emoji, i) => {
+                const speed = 0.03 + (i % 4) * 0.01;
+                const direction = i % 2 === 0 ? 1 : -1;
+                emoji.style.transform = `translateY(${scrolled * speed * direction}px) rotate(${scrolled * 0.015 * direction}deg)`;
             });
         });
     </script>
